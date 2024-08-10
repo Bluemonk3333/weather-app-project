@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    {{>headitems}}
+    <title>Weather App</title>
+  </head>
+  <body>
+    {{!-- navbar section --}}
+    {{>navbar}}
+
+    <!-- main body header page! -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-6 mol-12 main_header_left">
+              <p>Welcome to the weather app</p>
+              <h1>Get the latest <span>Weather</span> info of your City</h1>
+              <a href="/weather"><button>Check now</button></a>
+            </div>
+            <!-- right side div -->
+            <div class="col-md-6 col-12 main_header_right">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/bg2.png" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/bg2.png" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/bg2.png" class="w-100" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {{!-- footer section --}}
+    {{>footer}}
+
+    <!-- script files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

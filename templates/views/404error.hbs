@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    {{>headitems}}
+    <title>Weather App > 404 Error</title>
+  </head>
+  <body>
+    {{!-- navbar section --}}
+    {{>navbar}}
+
+    <!-- main body header page! -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- right side div -->
+            <div class="col-md-12 col-12 main_header_left align-items-center errorClass">
+              <figure class="errImg">
+                <img
+                  src="images/404-error.png"
+                  alt="About Page!"
+                  class="img-fluid"
+                  title="About Page image!"
+                />
+              </figure>
+              <p class="para">Welcome to the weather app</p>
+              <h1 class="heading">{{errorMsg}}</h1>
+              <a href="/"><button>Go back</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- footer section --}}
+    {{>footer}}
+
+    <!-- script files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

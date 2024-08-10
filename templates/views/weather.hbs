@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    {{>headitems}}
+    <title>Weather App > check weather</title>
+  </head>
+  <body>
+    {{!-- navbar section --}}
+    {{>navbar}}
+
+    {{!--* main header --}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                        <input type="submit" value="search" id="searchBtn">
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Thursday</p>
+                        <p id="todayDate">8 Aug</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name"> Get output here...</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_real_value">0</span><sup>o</sup>C</p>
+                            <p id="tempStatus"><i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- footer section --}}
+    {{>footer}}
+    {{!-- main js file --}}
+    <script src="js/main.js"></script>
+  </body>
+</html>
